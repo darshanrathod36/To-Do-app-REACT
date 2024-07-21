@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+  padding: 8px;
+  margin: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: monospace;
+  background-color: #b2deff;
+  width: 1200px;
+  padding-top: 60px;
+  padding-left: 430px;
+}
+h3 {
+  font-size: 22px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type="text"] {
+  padding: 1em;
+  font-size: 1.2em;
+  border: 2px solid #000000;
+  border-radius: 9px;
+  appearance: text-field;
+  -moz-appearance: textfield;
+  width: 370px;
+
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+button {
+  margin-left: 20px;
+  background-color: #b2deff;
+  cursor: pointer;
+  border-radius: 9px;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #88c9fa;
+}
+
+#root{
+  background-color: #FDE74C;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  width: 500px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
+
+  
 }
 
-.App-link {
-  color: #61dafb;
+.task-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #000000;
+  background-color: bisque;
+  border-radius: 8px;
+  margin: 8px 0;
+  padding: 10px;
+  height: 90px;
+ width: 430px;
+  font-size: 1.2em;
+
+overflow-wrap: break-word;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-buttons {
+  display: flex;
 }
+
