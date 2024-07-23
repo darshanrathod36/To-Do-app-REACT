@@ -44,6 +44,7 @@ function App() {
       setEditIndex(-1); // Reset editIndex if the editing task is deleted
       setCurTask(''); // Reset curTask
     }
+
   };
 
   return (
@@ -51,17 +52,20 @@ function App() {
 
       <h1>TO-DO <br/>APP</h1>
       <div>
-       <h3>Enter Task:</h3>
+        <h3>Enter Task:</h3>
+        
+        <div className='task-input'>
+          <input
+            type="text"
+            placeholder="Enter here"
+            value={curTask}
+            onChange={(e) => setCurTask(e.target.value)} 
+          />
+          <button onClick={btnClick}>
+            {editIndex !== -1 ? <i class="fa fa-pencil" aria-hidden="true"></i> : <i class="fa fa-plus" aria-hidden="true"></i>}
+          </button>
+        </div>
 
-        <input
-          type="text"
-          placeholder="Enter here"
-          value={curTask}
-          onChange={(e) => setCurTask(e.target.value)}
-        />
-        <button onClick={btnClick}>
-          {editIndex !== -1 ? <i class="fa fa-pencil" aria-hidden="true"></i> : <i class="fa fa-plus" aria-hidden="true"></i>}
-        </button>
       </div>
 
      <div>

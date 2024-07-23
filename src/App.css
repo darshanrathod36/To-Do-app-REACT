@@ -3,15 +3,19 @@
 * {
   padding: 8px;
   margin: 5px;
+ 
 }
 
 body {
   font-family: monospace;
   background-color: #b2deff;
-  width: 1200px;
-  padding-top: 60px;
-  padding-left: 430px;
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
 }
+
 h3 {
   font-size: 22px;
 }
@@ -24,8 +28,6 @@ input[type="text"] {
   appearance: text-field;
   -moz-appearance: textfield;
   width: 370px;
-
-  
 }
 
 button {
@@ -45,10 +47,13 @@ button:hover {
   border: 2px solid #000000;
   border-radius: 8px;
   width: 500px;
-  justify-content: center;
-  
+}
 
-  
+.task-input{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
 }
 
 .task-row {
@@ -61,10 +66,10 @@ button:hover {
   margin: 8px 0;
   padding: 10px;
   height: 90px;
- width: 430px;
+  width: 430px;
   font-size: 1.2em;
 
-overflow-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .task-buttons {
